@@ -1,0 +1,134 @@
+/*font-family: "Josefin Sans", sans-serif;*/
+/*----------------------------------------------------------------------------
+    Reset
+----------------------------------------------------------------------------*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+
+/*------------------------------------------------------------------------------
+   Base
+------------------------------------------------------------------------------*/
+
+body{
+    font: 1.8rem/28px "Rubik", sans-serif;
+}
+
+body a{
+    text-decoration: none;
+    color: black;
+    margin: 0;
+}
+
+body li{
+    list-style: none;
+}
+
+.wrapper{
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*------------------------------------------------------------------------------
+   Mise en page
+------------------------------------------------------------------------------*/
+
+/* HEADER */
+
+header{
+    background-color: #FFA052;
+    padding: 15px 0;
+}
+
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-left: 0;
+}
+
+header .wrapper div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+header a{
+    line-height: 21px;
+    padding: 10px 7px;
+    margin: 0;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    color: white;
+}
+
+header a:hover{
+    border-color: white;
+}
+
+header h1{
+    font: bold 4rem "Rubik", sans-serif;
+    margin: 0;
+    letter-spacing: 10%;
+}
+
+header h1 a{
+    border: none;
+    padding: 0;
+}
+
+/* SECTION HERO */
+
+section.hero{
+    height: 650px;
+    padding: 60px;
+    background-image: url(../img/imgheader.jpg);
+    background-size: cover;
+    color: white;
+}
+
+section.hero .wrapper{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+}
+
+section.hero .boite{
+    height: 225px;
+    width: 560px;
+    padding: 30px;
+    background-color: rgba(241, 37, 53, 0.65);
+}
+
+section.hero h2{
+    font: medium 3.6rem/43px "Rubik", sans-serif;
+    margin: 0 0 15px 0;
+}
+
+section.hero p{
+    margin: 0;
+}
+
+
+
+
