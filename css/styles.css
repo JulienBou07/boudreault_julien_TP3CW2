@@ -278,6 +278,7 @@ section.produit .boite{
     grid-template-rows: repeat(2, auto);
     gap: 20px;
     justify-items: center;
+    margin-bottom: 40px;
 }
 
 .produit article{
@@ -299,9 +300,32 @@ section.produit .boite{
 
 .produit article img{
     border: 9px solid transparent;
+    transition: all 0.3s ease;
 }
 
 .produit article img:hover{
     border: 9px solid #A0522C;
 }
 
+.produit .bouton{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically, if the container has a height */
+}
+
+
+.produit .bouton a{
+    font: normal 1.8rem/21.3px "Rubik", "sans-serif";
+    color: #FFF3E0;
+    margin-bottom: 0;
+    padding: 15px 30px;
+    border: 1px solid transparent;
+    background-color: #F14F5B;
+    transition: all 0.3s ease;
+}
+
+.produit .bouton a:hover{
+    color: #F14F5B;
+    background-color: #FFF3E0;
+    border: 1px solid #F14F5B;
+}
