@@ -21,17 +21,20 @@ html {
 
 body{
     font: 1.8rem/28px "Rubik", sans-serif;
+    background-color: #FFF3E0;
 }
 
-body a{
+a{
     text-decoration: none;
     color: black;
     margin: 0;
 }
 
-body li{
+li{
     list-style: none;
 }
+
+ 
 
 .wrapper{
     max-width: 1440px;
@@ -74,7 +77,7 @@ header .wrapper div{
 
 header a{
     line-height: 21px;
-    padding: 10px 7px;
+    padding: 7px 10px;
     margin: 0;
     border: 2px solid transparent;
     border-radius: 5px;
@@ -114,7 +117,6 @@ section.hero .wrapper{
 }
 
 section.hero .boite{
-    height: 225px;
     width: 560px;
     padding: 30px;
     background-color: rgba(241, 37, 53, 0.65);
@@ -129,6 +131,177 @@ section.hero p{
     margin: 0;
 }
 
+/* SECTION INSCRIPTION */
 
+.inscription{
+    padding: 50px 60px;
+    
+}
 
+.inscription .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.inscription .wrapper div{
+    width: 633px;
+}
+
+.inscription h2{
+    margin: 0 0 30px 0;
+    font: bold 3.6rem/53.4px "Oswald", "sans-serif";
+    color: #FFA052;
+}
+
+.inscription p{
+    margin: 0 0 50px 0;
+
+}
+
+.inscription a{
+    font: normal 1.8rem/21.3px "Rubik", "sans-serif";
+    color: #FFF3E0;
+    margin-bottom: 0;
+    padding: 15px 30px;
+    background-color: #F14F5B;
+    transition: all 0.3s ease;
+}
+
+.inscription a:hover{
+    color: #F14F5B;
+    background-color: #FFF3E0;
+    border: 1px solid #F14F5B;
+}
+
+/* SECTION ÉQUIPE */
+
+ section.equipe{
+    padding: 50px 60px;
+ }
+
+ section.equipe .boite{
+    text-align: center;
+    max-width: 562px;
+    margin: 0 auto 35px auto;
+ }
+
+ section.equipe h2{
+    margin: 0 0 30px 0;
+    font: bold 3.6rem/53.4px "Oswald", "sans-serif";
+    color: #FFA052;
+ }
+
+ section.equipe .boite p{
+    margin: 0 0 30px 0;
+ }
+
+ .equipe .grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+ }
+
+.equipe article img{
+    cursor: pointer;
+    margin: 0 0 30px 0;
+    
+ }
+
+ .equipe .grid article div {
+    max-width: 153px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+ }
+
+ .equipe article h3{
+    margin: 0 0 5px 0;
+    font: bold 2.2rem/28px "Rubik", "sans-serif";
+
+ }
+
+ .equipe article p{
+    margin: 0;
+ }
+
+/* SECTION PRODUITS */
+
+section.produit{
+    padding: 50px 60px;
+}
+
+section.produit .boite{
+    text-align: center;
+    max-width: 562px;
+    margin: 0 auto 35px auto;
+ }
+
+ section.produit h2{
+    margin: 0 0 30px 0;
+    font: bold 3.6rem/53.4px "Oswald", "sans-serif";
+    color: #FFA052;
+ }
+
+ section.produit .boite p{
+    margin: 0 0 45px 0;
+ }
+
+.produit nav ul{
+    padding-left: 0;
+    display: flex;
+    gap: 50px;
+    margin: 0 0 50px 0;
+}
+
+.produit nav a{
+    font: normal 1.4rem/4px "Rubik", "sans-serif";
+    color: #FFF3E0;
+    margin-bottom: 0;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    background-color: #F14F5B;
+    transition: all 0.3s ease;
+}
+
+.produit nav a:hover{
+    color: #F14F5B;
+    background-color: #FFF3E0;
+    border: 1px solid #F14F5B;
+}
+
+.produit .grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    justify-items: center;
+}
+
+.produit article{
+    text-align: center;
+}
+
+.produit article div{
+    max-width: 237px;
+    margin: 0 auto 0 auto;
+}
+
+.produit article h3{
+    margin: 20px 0 15px 0;
+}
+
+.produit article p{
+    margin: 0;
+}
+
+.produit article img{
+    border: 9px solid transparent;
+}
+
+.produit article img:hover{
+    border: 9px solid #A0522C;
+}
 
