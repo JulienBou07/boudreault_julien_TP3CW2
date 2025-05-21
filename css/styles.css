@@ -471,6 +471,86 @@ footer span{
     
 }
 
+/*------------------------------------------------------------------------------
+   Liste Articles
+------------------------------------------------------------------------------*/
+
+/* SECTION VEDETTE */
+
+.vedette{
+    padding: 50px 60px;
+}
+
+.vedette img{
+    border: 8px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.vedette img:hover{
+    border: 8px solid #A0522C;
+}
+
+.vedette .flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.vedette .boite{
+    width: 661px;
+    text-align: center;
+}
+
+.vedette h2{
+    margin: 0 0 21px 0;
+    font: bold 4.8rem "Oswald", "sans-serif";
+}
+
+.vedette h3{
+    margin: 21px 0 0 0;
+    font: 500 4.8rem "Oswald", "sans-serif";
+}
+
+/* SECTION ARTICLES */
+
+.listearticle{
+    padding: 50px 60px;
+}
+
+.listearticle img{
+    width: 100%;
+    max-width: 375px;
+    height: 375px;
+    border: 8px solid transparent;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.listearticle img:hover{
+    border: 8px solid #A0522C;
+}
+
+.listearticle .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 375px);
+    justify-content: space-between; 
+
+}
+
+.listearticle article{
+    width: 375px;
+}
+
+.listearticle article .couleur{
+    margin-bottom: 0;
+}
+
+.listearticle article .couleur+p{
+    margin-top: 0;
+}
+
+
+
 
 
 
