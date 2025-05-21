@@ -152,7 +152,7 @@ section.hero p{
 
 .inscription h2{
     margin: 0 0 30px 0;
-    font: bold 3.6rem/53.4px "Oswald", "sans-serif";
+    font: bold 3.6rem/53.4px "Oswald", sans-serif;
     color: #FFA052;
 }
 
@@ -162,7 +162,7 @@ section.hero p{
 }
 
 .inscription a{
-    font: normal 1.8rem/21.3px "Rubik", "sans-serif";
+    font: normal 1.8rem/21.3px "Rubik", sans-serif;
     color: #FFF3E0;
     margin-bottom: 0;
     padding: 15px 30px;
@@ -190,7 +190,7 @@ section.hero p{
 
  section.equipe h2{
     margin: 0 0 30px 0;
-    font: bold 3.6rem/53.4px "Oswald", "sans-serif";
+    font: bold 3.6rem/53.4px "Oswald", sans-serif;
     color: #FFA052;
  }
 
@@ -228,7 +228,7 @@ section.hero p{
 
  .equipe article h3{
     margin: 0 0 5px 0;
-    font: bold 2.2rem/28px "Rubik", "sans-serif";
+    font: bold 2.2rem/28px "Rubik", sans-serif;
 
  }
 
@@ -250,7 +250,7 @@ section.produit .boite{
 
  section.produit h2{
     margin: 0 0 30px 0;
-    font: bold 3.6rem/53.4px "Oswald", "sans-serif";
+    font: bold 3.6rem/53.4px "Oswald", sans-serif;
     color: #FFA052;
  }
 
@@ -266,7 +266,7 @@ section.produit .boite{
 }
 
 .produit nav a{
-    font: normal 1.4rem/4px "Rubik", "sans-serif";
+    font: normal 1.4rem/4px "Rubik", sans-serif;
     color: #FFF3E0;
     margin-bottom: 0;
     padding: 5px 10px;
@@ -324,7 +324,7 @@ section.produit .boite{
 
 
 .produit .bouton a{
-    font: normal 1.8rem/21.3px "Rubik", "sans-serif";
+    font: normal 1.8rem/21.3px "Rubik", sans-serif;
     color: #FFF3E0;
     margin-bottom: 0;
     padding: 15px 30px;
@@ -352,7 +352,7 @@ section.contact .wrapper{
 
 section.contact h2{
     text-align: center;
-    font: bold 3.6rem/53.4px "Oswald", "sans-serif";
+    font: bold 3.6rem/53.4px "Oswald", sans-serif;
     color: #FF7200;
     margin: 0;
     padding-bottom: 30px;
@@ -379,7 +379,7 @@ section.contact .grid p{
 }
 
 section.contact h3{
-    font: bold 2.2rem/28px "Rubik", "sans-serif";
+    font: bold 2.2rem/28px "Rubik", sans-serif;
     margin: 0;
 }
 
@@ -420,7 +420,7 @@ section.contact .bouton{
 }
 
 section.contact .bouton a{
-    font: 200 2.4rem/21.3px "Rubik", "sans-serif";
+    font: 200 2.4rem/21.3px "Rubik", sans-serif;
     color: #FFF3E0;
     padding: 15px 40px;
     border: 1px solid transparent;
@@ -471,6 +471,62 @@ footer span{
     
 }
 
+
+/* SECTION MODALE */
+.modale {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    flex-direction: column;
+}
+
+.modale.visible {
+    display: flex;
+}
+
+.contenumodale {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.modale img.zoom {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    border: 5px solid white;
+
+}
+
+.modale img.zoom:hover {
+    cursor: pointer;
+}
+
+.nom-modale {
+    color: white;
+    font: bold 9rem "Rubik", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.poste-modale {
+    color: #ccc;
+    text-align: center;
+    font: bold 2.6rem "Rubik", sans-serif;
+
+}
+
 /*------------------------------------------------------------------------------
    Liste Articles
 ------------------------------------------------------------------------------*/
@@ -503,12 +559,12 @@ footer span{
 
 .vedette h2{
     margin: 0 0 21px 0;
-    font: bold 4.8rem "Oswald", "sans-serif";
+    font: bold 4.8rem "Oswald", sans-serif;
 }
 
 .vedette h3{
     margin: 21px 0 0 0;
-    font: 500 4.8rem "Oswald", "sans-serif";
+    font: 500 4.8rem "Oswald", sans-serif;
 }
 
 /* SECTION ARTICLES */
@@ -550,6 +606,113 @@ footer span{
 }
 
 
+/*------------------------------------------------------------------------------
+   Fiche Articles
+------------------------------------------------------------------------------*/
+/* SECTION PRODUIT */
+.fiche{
+    padding: 50px 60px;
+}
+.fiche .wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.fiche .boite{
+    width: 661px;
+}
+
+.fiche .boite div{
+    display: flex;
+    gap : 10px;
+    margin-top: 20px;
+}
+
+.fiche .boite div a{
+    border-bottom: solid 1px transparent;
+}
+
+.fiche .boite div a:hover{
+    border-bottom: solid 1px black;
+}
+
+.fiche h2{
+    font: bold 4.8rem "Oswald", sans-serif;
+    margin: 0;
+}
+
+.fiche .couleur{
+    font: 300 2.4rem "Rubik", sans-serif;
+}
+
+.fiche .description{
+    font: 300 1.6rem "Rubik" sans-serif;
+}
+
+.fiche h3{
+    font: 500 4rem "Oswald", sans-serif;
+    margin: 0;
+}
+
+/* SECTION PRODUIT */
+.listearticle{
+    padding: 50px 60px;
+}
+
+.listearticle img{
+    width: 100%;
+    max-width: 375px;
+    height: 375px;
+    border: 8px solid transparent;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.listearticle img:hover{
+    border: 8px solid #A0522C;
+}
+
+.listearticle .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 375px);
+    justify-content: space-around; 
+
+}
+
+.listearticle article{
+    width: 375px;
+}
+
+.listearticle article .couleur{
+    margin-bottom: 0;
+}
+
+.listearticle article .couleur+p{
+    margin-top: 0;
+}
+
+.listearticle .bouton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listearticle .bouton a{
+    font: normal 1.8rem/21.3px "Rubik", sans-serif;
+    color: #FFF3E0;
+    margin-bottom: 0;
+    padding: 10px 17px;
+    border: 1px solid transparent;
+    background-color: #F14F5B;
+    transition: all 0.3s ease;
+}
+
+.listearticle .bouton a:hover{
+    color: #F14F5B;
+    background-color: #FFF3E0;
+    border: 1px solid #F14F5B;
+}
 
 
 
